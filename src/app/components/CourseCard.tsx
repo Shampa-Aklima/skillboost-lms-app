@@ -41,9 +41,7 @@ export default function CourseCard({ course }: CourseCardProps): JSX.Element {
             {students.toLocaleString()} students
           </div>
         </div>
-        <button className="w-full inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 h-10 px-4 py-2 bg-purple-700 text-white hover:bg-purple-800">
-          Enroll Now
-        </button>
+        
       </div>
     </div>
   )

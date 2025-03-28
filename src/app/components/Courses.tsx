@@ -85,9 +85,7 @@ export default function Courses(): React.ReactElement {
         </div>
 
         <div className="mt-16 text-center">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 h-11 rounded-md px-8 text-base bg-purple-700 text-white hover:bg-purple-800">
-            View All Courses
-          </button>
+          
         </div>
       </Container>
     </section>

@@ -23,27 +23,26 @@ export default function Welcome(): React.ReactElement {
                 className="object-contain "
               />
             </div>
-            <div className="relative w-full h-[300px] md:h-[400px]">
+            <div className="relative w-full h-[300px] md:h-[400px] ">
               <Image
                 src="/about1.png"
                 alt="Student"
                 fill
-                className="object-contain"
+                className="object-contain "
               />
             </div>
-            <div  className="absolute left-0  flex justify-center items-center gap-10">
-            <div className="flex overflow-x-hidden bg-white p-8 border-l-4 border-[#5F2DED] drop-shadow-2xl shadow-gray-300 w-[280px]">
-              <span>0+</span>
-              <h4>YEARS EXPERIENCE
-              JUST ACHIVED</h4>
-            </div>
-            <Image 
-            src="/about2.png"
-            alt="pic"
-            width={120}
-            height={80}
-            
-            />
+            <div className=" flex justify-center items-center gap-8 m-[-50px] ">
+              <div className="flex overflow-x-hidden bg-white p-8 border-l-4 border-[#5F2DED] drop-shadow-2xl shadow-gray-300 w-[280px] z-10">
+                <span>0+</span>
+                <h4>YEARS EXPERIENCE JUST ACHIVED</h4>
+              </div>
+              <Image
+                src="/about2.png"
+                alt="pic"
+                width={120}
+                height={300}
+                className="z-10"
+              />
             </div>
           </div>
 
@@ -74,6 +73,32 @@ export default function Welcome(): React.ReactElement {
                 Lorem Ipsum is simply dummy
               </li>
             </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-2 mt-30">
+          <div className="flex overflow-x-hidden bg-white  ">
+            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <h4>
+              <span>0+</span>Total Acheivment
+            </h4>
+          </div>
+          <div className="flex overflow-x-hidden bg-white  ">
+            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <h4>
+              <span>0+</span>Total Acheivment
+            </h4>
+          </div>
+          <div className="flex overflow-x-hidden bg-white  ">
+            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <h4>
+              <span>0+</span>Total Acheivment
+            </h4>
+          </div>
+          <div className="flex overflow-x-hidden bg-white  ">
+            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <h4>
+              <span>0+</span>Total Acheivment
+            </h4>
           </div>
         </div>
       </Container>
