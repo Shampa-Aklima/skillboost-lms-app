@@ -3,7 +3,7 @@ import Container from "./Container";
 import { Check } from "lucide-react";
 export default function Welcome(): React.ReactElement {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="mt-10 py-16 md:py-24 bg-white">
       <Container>
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
@@ -77,25 +77,25 @@ export default function Welcome(): React.ReactElement {
         </div>
         <div className="grid grid-cols-4 gap-2 mt-30">
           <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
             <h4>
               <span>0+</span>Total Acheivment
             </h4>
           </div>
           <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
             <h4>
               <span>0+</span>Total Acheivment
             </h4>
           </div>
           <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
             <h4>
               <span>0+</span>Total Acheivment
             </h4>
           </div>
           <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={50} height={50} />
+            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
             <h4>
               <span>0+</span>Total Acheivment
             </h4>
