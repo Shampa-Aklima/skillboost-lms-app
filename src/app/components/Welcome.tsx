@@ -5,7 +5,7 @@ export default function Welcome(): React.ReactElement {
   return (
     <section className="py-16 md:py-24 bg-white">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="order-2 md:order-1">
             <div className="absolute left-[100px]  w-[138px] h-[135px] md:h-[135px]">
               <Image
@@ -30,6 +30,20 @@ export default function Welcome(): React.ReactElement {
                 fill
                 className="object-contain"
               />
+            </div>
+            <div  className="absolute left-0  flex justify-center items-center gap-10">
+            <div className="flex overflow-x-hidden bg-white p-8 border-l-4 border-[#5F2DED] drop-shadow-2xl shadow-gray-300 w-[280px]">
+              <span>0+</span>
+              <h4>YEARS EXPERIENCE
+              JUST ACHIVED</h4>
+            </div>
+            <Image 
+            src="/about2.png"
+            alt="pic"
+            width={120}
+            height={80}
+            
+            />
             </div>
           </div>
 

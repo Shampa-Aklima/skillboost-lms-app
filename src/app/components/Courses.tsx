@@ -12,7 +12,7 @@ const courses: CourseType[] = [
     duration: "8 weeks",
     rating: 4.8,
     students: 1245,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course1.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const courses: CourseType[] = [
     duration: "10 weeks",
     rating: 4.9,
     students: 876,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course2.png",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const courses: CourseType[] = [
     duration: "6 weeks",
     rating: 4.7,
     students: 1532,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course3.png",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const courses: CourseType[] = [
     duration: "8 weeks",
     rating: 4.6,
     students: 987,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course5.png",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const courses: CourseType[] = [
     duration: "12 weeks",
     rating: 4.8,
     students: 1123,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course5.png",
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const courses: CourseType[] = [
     duration: "10 weeks",
     rating: 4.9,
     students: 756,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/course6.png",
   },
 ]
 
@@ -71,7 +71,8 @@ export default function Courses(): React.ReactElement {
     <section className="py-16 md:py-24 bg-white">
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Courses</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perfect Online
+          Course Your Carrer</h2>
           <p className="text-lg text-gray-600">
             Explore our most sought-after courses and start your learning journey today
           </p>
