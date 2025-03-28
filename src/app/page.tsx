@@ -17,9 +17,10 @@ export default function Home() {
       <Welcome/>
       <Features/>
       <Courses/>
+      <Contact/>
       <Testimonials/>
      <Pricing/>
-     <Contact/>
+     
 
     </div>
   );

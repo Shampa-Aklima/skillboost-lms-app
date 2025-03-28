@@ -2,7 +2,7 @@
 
 import { type FormEvent, useState } from "react"
 import Container from "./Container"
-import Image from "next/image"
+// import Image from "next/image"
 import type React from "react"
 
 interface FormData {
@@ -42,9 +42,9 @@ export default function Contact(): JSX.Element {
   }
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-purple-900 to-violet-800 text-white">
+    <section className="h-[521px] py-16 md:py-24 bg-[#260094ED] text-white">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch With Us</h2>
             <p className="text-lg opacity-90 mb-8">
@@ -52,23 +52,12 @@ export default function Contact(): JSX.Element {
               learning journey.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="font-semibold text-xl mb-2">Email Us</h3>
-                <p className="opacity-90">support@skillboost.com</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="font-semibold text-xl mb-2">Call Us</h3>
-                <p className="opacity-90">+1 (555) 123-4567</p>
-              </div>
-            </div>
-
-            <div className="relative h-[200px] md:h-[300px] rounded-lg overflow-hidden">
+            {/* <div className="relative h-[200px] md:h-[300px] rounded-lg overflow-hidden">
               <Image src="/placeholder.svg?height=300&width=500" alt="Contact us" fill className="object-cover" />
-            </div>
+            </div> */}
           </div>
 
-          <div className="bg-white rounded-xl p-6 md:p-8 text-gray-900">
+          <div className="bg-white rounded-xl p-6 md:p-8 text-gray-900 w-[470px] h-[581px]">
             <h3 className="text-2xl font-bold mb-6 text-center">Send Us a Message</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
