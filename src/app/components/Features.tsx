@@ -32,7 +32,7 @@ const features: FeatureType[] = [
 
 export default function Features(): React.ReactElement {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className=" bg-gray-50">
       <Container>
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-5 p-8 mt-10">
@@ -42,11 +42,11 @@ export default function Features(): React.ReactElement {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Provide It & Technol Subject For You
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-[#5F6C76] text-xm">
               Construction is a general term meaning the art and science to form
               systems organizations, and comes from Latin Construction is
             </p>
-            <p className="text-gray-600 text-lg border-l-4 border-[#F2277E]">
+            <p className="text-[#5F6C76] text-xm border-l-4 border-[#F2277E]">
               Construction is a general term meaning the art and science to form
               systems organizations, and comes from Latin Construction is a
               organizations, and comes from Latin construction and Old
@@ -57,7 +57,7 @@ export default function Features(): React.ReactElement {
           </div>
           <div>
             <div className="p-8">
-              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-6">
+              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-6 gap-x-6">
                 {features.map((feature, index) => (
                   <FeatureCard
                     key={index}

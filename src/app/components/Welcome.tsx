@@ -15,7 +15,7 @@ export default function Welcome(): React.ReactElement {
                 className="object-contain "
               />
             </div>
-            <div className="absolute w-[138px] h-[135px] md:h-[135px]">
+            <div className="absolute top-40 w-[138px] h-[135px] md:h-[135px]">
               <Image
                 src="/about3.png"
                 alt="Student"
@@ -32,14 +32,14 @@ export default function Welcome(): React.ReactElement {
               />
             </div>
             <div className=" flex justify-center items-center gap-8 m-[-50px] ">
-              <div className="flex overflow-x-hidden bg-white p-8 border-l-4 border-[#5F2DED] drop-shadow-2xl shadow-gray-300 w-[280px] z-10">
-                <span>0+</span>
-                <h4>YEARS EXPERIENCE JUST ACHIVED</h4>
+              <div className="flex overflow-x-hidden bg-white p-3 border-l-4 border-[#5F2DED] drop-shadow-2xl shadow-gray-300 w-[280px] z-10">
+                <span className="text-xl text-[#5F2DED] font-bold">0+</span>
+                <h4 className="text-xm font-bold">YEARS EXPERIENCE JUST ACHIVED</h4>
               </div>
               <Image
                 src="/about2.png"
                 alt="pic"
-                width={120}
+                width={150}
                 height={300}
                 className="z-10"
               />
@@ -56,50 +56,56 @@ export default function Welcome(): React.ReactElement {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Learning Center
             </h2>
-            <p className="text-gray-600 text-lg">
+            <p className="text-[#5F6C76] text-lg">
               25+Contrary to popular belief, Lorem Ipsum is not simply random
               text roots in a piece of classical Latin literature from 45 BC
             </p>
             <div className="flex flex-col">
-              <li className="list-none inline-flex mr-3">
-                <Check /> Lorem Ipsum is simply dummy
+              <li className="list-none inline-flex mr-3 leading-8">
+                <Check  className="text-[#5F2DED] text-sm"/> Lorem Ipsum is simply dummy
               </li>
-              <li className="list-none inline-flex mr-3">
-                <Check /> Explore a variety of fresh educational teach
+              <li className="list-none inline-flex mr-3 leading-8">
+                <Check  className="text-[#5F2DED] text-sm"/> Explore a variety of fresh educational teach
               </li>
-              <li className="list-none inline-flex mr-3">
+              <li className="list-none inline-flex mr-3 leading-8">
                 {" "}
-                <Check />
+                <Check  className="text-[#5F2DED] text-sm "/>
                 Lorem Ipsum is simply dummy
               </li>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-2 mt-30">
-          <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
-            <h4>
-              <span>0+</span>Total Acheivment
-            </h4>
+        <div className="grid grid-cols-4 gap-5 mt-30 w-[80%] mx-auto">
+          <div className="flex overflow-x-hidden bg-white justify-center items-center gap-3 ">
+            <Image src="/about2.2.png" alt="icon" width={30} height={30} />
+            <div className="flex flex-col">
+            <h4 className="text-xl font-bold">0+</h4>
+            <span className="text-xm font-regular">TOTAL STUDENTS</span>
+            </div>
+            </div>
+          <div className="flex overflow-x-hidden bg-white justify-center items-center gap-3 ">
+            <Image src="/about2.2.png" alt="icon" width={30} height={30} />
+            <div>
+            <h4 className="text-xl font-bold">0+</h4>
+            <span className="text-xm font-regular">Total Acheivment</span>
+            </div>
           </div>
-          <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
-            <h4>
-              <span>0+</span>Total Acheivment
-            </h4>
+          <div className="flex overflow-x-hidden bg-white justify-center items-center gap-3 ">
+            <Image src="/about2.3.png" alt="icon" width={30} height={30} />
+            <div className="flex flex-col">
+            <h4 className="text-xl font-bold">0+</h4>
+            <span className="text-xm font-regular">TOTAL STUDENTS</span>
+            </div>
+            </div>
+          <div className="flex overflow-x-hidden bg-white justify-center items-center gap-3 ">
+            <Image src="/about2.4.png" alt="icon" width={30} height={30} />
+            <div className="flex flex-col">
+            <div className="flex flex-col">
+            <h4 className="text-xl font-bold">0K</h4>
+            <span className="text-xm font-regular">TOTAL INSTRUCTOR</span>
+            </div>
           </div>
-          <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
-            <h4>
-              <span>0+</span>Total Acheivment
-            </h4>
-          </div>
-          <div className="flex overflow-x-hidden bg-white  ">
-            <Image src="/about2.2.png" alt="icon" width={35} height={35} />
-            <h4>
-              <span>0+</span>Total Acheivment
-            </h4>
-          </div>
+        </div>
         </div>
       </Container>
     </section>
