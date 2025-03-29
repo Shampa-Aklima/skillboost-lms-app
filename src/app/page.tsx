@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import PartnerLogos from "./components/PartnerLogos";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
-
 import Welcome from "./components/Welcome";
 
 
@@ -18,9 +17,8 @@ export default function Home() {
       <Features/>
       <Courses/>
       <Contact/>
-      <Testimonials/>
-     <Pricing/>
-     
+       <Pricing/>
+     <Testimonials/>
 
     </div>
   );
