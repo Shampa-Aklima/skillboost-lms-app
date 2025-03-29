@@ -17,7 +17,7 @@ export default function PricingCard({ plan }: PricingCardProps): JSX.Element {
   return (
     <div
       className={cn(
-        "rounded-xl overflow-hidden",
+        "rounded-xl overflow-hidden w-[370px] h-[600px]",
         highlighted ? "bg-[#F5F5FE] text-gray-900 shadow-xl scale-105 z-10" : "bg-[#F5F5FE] backdrop-blur-sm",
       )}
     >
@@ -46,7 +46,7 @@ export default function PricingCard({ plan }: PricingCardProps): JSX.Element {
                   highlighted ? "bg-[#F2277E]" : "bg-[#6D6E75]",
                 )}
               >
-                <Check className={cn("w-3 h-3", highlighted ? "text-purple-700" : "text-white")} />
+                <Check className={cn("w-3 h-3", highlighted ? "text-white" : "text-white")} />
               </div>
               <span className={cn("text-sm", highlighted ? "text-gray-700" : "text-white/90")}>{feature}</span>
             </li>
