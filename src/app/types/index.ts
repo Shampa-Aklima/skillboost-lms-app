@@ -25,6 +25,7 @@ export interface PricingPlanType {
   description: string
   features: string[]
   highlighted: boolean
+  image:string
   buttonText: string
 }
 

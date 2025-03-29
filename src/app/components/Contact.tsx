@@ -64,7 +64,7 @@ export default function Contact(): JSX.Element {
             </div> */}
           </div>
 
-          <div className="bg-white rounded-xl p-6 md:p-8 text-gray-900 w-[430px] h-[530px]">
+          <div className="bg-[#F5F5FE] rounded-xl p-6 md:p-8 text-gray-900 w-[430px] h-[530px]">
             <h3 className="text-2xl font-bold mb-6 text-center">
               Fill Your Registration
             </h3>
@@ -102,7 +102,7 @@ export default function Contact(): JSX.Element {
               <div>
                 <input
                   id="name"
-                  placeholder="Your Name"
+                  placeholder="Address"
                   className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   value={formData.name}
                   onChange={handleChange}

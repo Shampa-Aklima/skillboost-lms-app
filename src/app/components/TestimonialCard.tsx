@@ -10,7 +10,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps): 
   const { content, author, position, avatar } = testimonial
 
   return (
-    <div className="bg-gray-50 p-6 md:p-8 rounded-xl border border-gray-100">
+    <div className="bg-[#F5F5FE] p-6 md:p-8 rounded-xl border border-gray-100">
       <p className="text-gray-700 mb-6 italic">{content}</p>
       <div className="flex items-center">
         <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">

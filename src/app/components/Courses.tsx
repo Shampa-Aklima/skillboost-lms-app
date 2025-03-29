@@ -42,7 +42,7 @@ const courses: CourseType[] = [
     duration: "8 weeks",
     rating: 4.6,
     students: 987,
-    image: "/course5.png",
+    image: "/course4.png",
   },
   {
     id: 5,
