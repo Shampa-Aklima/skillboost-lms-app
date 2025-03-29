@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import Link from "next/link";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-import Container from "./Container"
-import type React from "react"
-import Image from "next/image"
+import Container from "./Container";
+import type React from "react";
+import Image from "next/image";
 
 export default function Header(): React.ReactElement {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = (): void => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm">
@@ -21,33 +21,40 @@ export default function Header(): React.ReactElement {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-            
-              <Image 
-              src="/logo.png"
-              alt="logo"
-              width={160}
-              height={80}
-              
-              
-              />
+              <Image src="/logo.png" alt="logo" width={160} height={80} />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+            <Link
+              href="/"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
               Home
             </Link>
-            <Link href="#courses" className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+            <Link
+              href="#courses"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
               Courses
             </Link>
-            <Link href="#pricing" className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+            <Link
+              href="#pricing"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
               Pricing
             </Link>
-            <Link href="#about" className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+            <Link
+              href="#about"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
               About
             </Link>
-            <Link href="#contact" className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors">
+            <Link
+              href="#contact"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
               Contact
             </Link>
           </nav>
@@ -68,7 +75,11 @@ export default function Header(): React.ReactElement {
             onClick={toggleMenu}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
       </Container>
@@ -126,6 +137,5 @@ export default function Header(): React.ReactElement {
         </div>
       )}
     </header>
-  )
+  );
 }
-

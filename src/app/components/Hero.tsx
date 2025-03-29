@@ -4,15 +4,15 @@ import type React from "react"
 
 export default function Hero(): React.ReactElement {
   return (
-    <section className="bg-[#170F2F] text-white py-16 md:py-24 ">
+    <section className="bg-[#170F2F] text-white py-16 md:py-24 mt-10 ">
       <Container className="max-h-[760px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+          <div className=" space-y-6 pl-16">
             <p className="text-xl text-[#F2277E]">Education Solution</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-              Cloud-based LMS
-              <span className="block mt-2">Powered by Vision</span>
-            </h1>
+            <h2 className="text-xl md:text-xl lg:text-6xl font-bold">
+            Cloud-based LMS
+            Trusted by 1000+
+            </h2>
             <p className="text-lg md:text-xl opacity-90 max-w-lg">
             Lorem Ipsum is simply dummy text of the printing typesetting
             industry. Lorem Ipsum has been
@@ -26,7 +26,7 @@ export default function Hero(): React.ReactElement {
               </button>
             </div>
           </div>
-          <div className="flex justify-center p-7 lg:justify-center">
+          <div className=" flex justify-center p-7 lg:justify-center">
             <div className="relative z-0  w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
               <Image
                 src="/hero1.png"

@@ -57,7 +57,7 @@ export default function Features(): React.ReactElement {
           </div>
           <div>
             <div className="p-8">
-              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-6 gap-x-6">
+              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-10">
                 {features.map((feature, index) => (
                   <FeatureCard
                     key={index}

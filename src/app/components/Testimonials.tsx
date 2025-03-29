@@ -1,7 +1,7 @@
 import type React from "react";
 import Container from "./Container";
 import TestimonialCard from "./TestimonialCard";
-import { QuoteIcon } from "./Icon";
+
 import type { TestimonialType } from "../types";
 
 const testimonials: TestimonialType[] = [
@@ -30,7 +30,7 @@ export default function Testimonials(): React.ReactElement {
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-5 mr-6 mt-10">
             <div className="w-1/3  bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium">
-              Populer Subject
+              Testimonials
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               What They Say About us

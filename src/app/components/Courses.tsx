@@ -1,7 +1,6 @@
-import Container from "./Container"
-import CourseCard from "./CourseCard"
-import type { CourseType } from "../types"
-
+import Container from "./Container";
+import CourseCard from "./CourseCard";
+import type { CourseType } from "../types";
 
 const courses: CourseType[] = [
   {
@@ -64,18 +63,42 @@ const courses: CourseType[] = [
     students: 756,
     image: "/course6.png",
   },
-]
+];
 
 export default function Courses(): React.ReactElement {
   return (
     <section className="py-16 md:py-24 bg-white">
       <Container>
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Perfect Online
-          Course Your Carrer</h2>
-          <p className="text-lg text-gray-600">
-            Explore our most sought-after courses and start your learning journey today
-          </p>
+        <div className="flex justify-between">
+          <div className="text-start max-w-3xl mb-16 p-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Perfect Online  <br/> Course Your Carrer
+            </h2>
+            <p className="text-xm text-gray-600">
+              Explore our most sought-after courses and start your learning
+              journey today
+            </p>
+          </div>
+
+          <div className="flex flex-wrap  mb-10 mt-8">
+            <div className="flex  justify-between gap-8 overflow-x-auto space-x-2 pb-2 max-w-full">
+              <button className=" text-sm font-medium  text-black">
+                See All
+              </button>
+              <button className=" text-sm font-medium  text-black">
+                Data Science
+              </button>
+              <button className=" text-sm font-medium  text-black">
+                Engineering
+              </button>
+              <button className=" text-sm font-medium  text-black">
+                Featured
+              </button>
+              <button className=" text-sm font-medium  text-black">
+                Architecture
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -84,11 +107,8 @@ export default function Courses(): React.ReactElement {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          
-        </div>
+        <div className="mt-16 text-center"></div>
       </Container>
     </section>
-  )
+  );
 }
-
