@@ -27,7 +27,7 @@ export default function Testimonials(): React.ReactElement {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <Container>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 ">
           <div className="flex flex-col gap-5 mr-6 mt-10">
             <div className="w-1/3  bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium">
               Testimonials
@@ -45,7 +45,7 @@ export default function Testimonials(): React.ReactElement {
             </button>
           </div>
 
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-6">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-y-6">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
             ))}

@@ -6,7 +6,7 @@ export default function Hero(): React.ReactElement {
   return (
     <section className="bg-[#170F2F] text-white py-16 md:py-24 mt-10 ">
       <Container className="max-h-[760px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 md:grid-cols-1 items-center">
           <div className=" space-y-6 pl-16">
             <p className="text-xl text-[#F2277E]">Education Solution</p>
             <h2 className="text-xl md:text-xl lg:text-6xl font-bold">

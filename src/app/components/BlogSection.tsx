@@ -48,7 +48,7 @@ export default function BlogSection({ posts = [] }: BlogSectionProps) {
           <h2 className="text-3xl font-bold mt-1">Leatest News & Blog</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6">
           {/* Main featured post */}
           <div className="bg-white rounded-lg overflow-hidden">
             <div className="relative">
@@ -101,7 +101,7 @@ export default function BlogSection({ posts = [] }: BlogSectionProps) {
           {/* Right side posts */}
           <div className="space-y-6">
             {secondaryPosts.map((post) => (
-              <div key={post.id} className="bg-white rounded-lg overflow-hidden flex flex-col md:flex-row">
+              <div key={post.id} className="bg-white rounded-lg overflow-hidden ">
                 <div className="relative md:w-2/5">
                   <Image
                     src={post.image || "/placeholder.svg"}

@@ -34,7 +34,7 @@ export default function Features(): React.ReactElement {
   return (
     <section className=" bg-gray-50">
       <Container>
-        <div className="grid grid-cols-2">
+        <div className="grid sm:grid-cols-1 lg:grid-cols-2 md:grid-cols-1">
           <div className="flex flex-col gap-5 p-8 mt-10">
             <div className="w-1/3  bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-medium">
               Populer Subject

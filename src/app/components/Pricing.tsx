@@ -62,7 +62,7 @@ export default function Pricing(): React.ReactElement {
           For your Learning</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {pricingPlans.map((plan, index) => (
             <PricingCard key={index} plan={plan} />
           ))}

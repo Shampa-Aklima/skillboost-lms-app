@@ -81,7 +81,7 @@ export default function Courses(): React.ReactElement {
           </div>
 
           <div className="flex flex-wrap  mb-10 mt-8">
-            <div className="flex  justify-between gap-8 overflow-x-auto space-x-2 pb-2 max-w-full">
+            <div className="flex  justify-between  gap-8 overflow-x-auto space-x-2 pb-2 max-w-full">
               <button className=" text-sm font-medium  text-black">
                 See All
               </button>
