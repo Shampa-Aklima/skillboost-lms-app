@@ -10,6 +10,7 @@ export interface CourseType {
   rating: number
   students: number
   image: string
+  lessons: number
 }
 
 export interface FeatureType {

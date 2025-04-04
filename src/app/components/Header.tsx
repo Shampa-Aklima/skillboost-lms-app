@@ -32,6 +32,12 @@ export default function Header(): React.ReactElement {
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
               Home
+              <ul>
+                <li>
+                  <Link href="/home1">Home1</Link>
+                </li>
+                
+              </ul>
             </Link>
             <Link
               href="#courses"
