@@ -51,11 +51,8 @@ export default function Header(): React.ReactElement {
             >
               Pricing
             </Link>
-            <Link
-              href="#about"
-              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
-            >
-              About
+            <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-purple-700">About
+            
             </Link>
             <Link
               href="#contact"

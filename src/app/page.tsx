@@ -12,7 +12,13 @@ import { blogPosts } from "./types/blogData";
 export default function Home() {
   return (
     <div>
-      <Hero />
+      <Hero 
+        variant="home"
+        title="Welcome to the online Learning Center"
+        subtitle="Education Solution"
+        description="Discover our comprehensive online learning platform designed to help you achieve your educational goals. Join thousands of students worldwide in their learning journey."
+        imageSrc="/hero1.png"
+      />
       <PartnerLogos />
       <Welcome />
       <Features />
