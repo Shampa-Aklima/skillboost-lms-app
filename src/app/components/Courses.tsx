@@ -81,7 +81,7 @@ export default function Courses({ variant = 'default' }: CoursesProps) {
     <section className="py-16 md:py-24 bg-white">
       <Container>
         <div className="flex justify-between">
-          <div className="text-start max-w-3xl mb-16 p-8">
+          <div className="text-start max-w-4xl mb-16 p-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Perfect Online Course
               <br />
@@ -94,7 +94,7 @@ export default function Courses({ variant = 'default' }: CoursesProps) {
           </div>
 
           <div className="flex flex-wrap mb-10 mt-8">
-            <div className="flex justify-between gap-8 overflow-x-auto space-x-2 pb-2 max-w-full">
+            <div className="flex justify-between gap-8 overflow-x-auto space-x-2 pb-2">
               <button className="text-sm font-medium text-black">See All</button>
               <button className="text-sm font-medium text-black">Data Science</button>
               <button className="text-sm font-medium text-black">Engineering</button>
@@ -104,7 +104,7 @@ export default function Courses({ variant = 'default' }: CoursesProps) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) => (
             <CourseCard key={course.id} course={course} variant="default" />
           ))}

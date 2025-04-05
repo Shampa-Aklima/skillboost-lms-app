@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Courses from "../components/Courses";
 import Hero from "../components/Hero";
 import PartnerLogos from "../components/PartnerLogos";
@@ -7,13 +8,16 @@ import {
   TabsList,
   TabsTrigger,
   TabsContent,
-} from "../components/ui/tabs";
+} from "@/app/components/ui/tabs";
 
 const page = () => {
     return (
     <>
-      <div className="w-full h-[412px] bg-gray-200 flex flex-col justify-center items-center text-3xl">
-        About
+      <div className="w-full h-[412px] flex flex-col justify-center items-center text-3xl bg-[#F8F6FF] bg-cover bg-center text-black font-semibold relative">
+        <div className="absolute inset-0 opacity-10">
+          <Image src="/hero3.png" alt="pattern" fill className="object-cover" />
+        </div>
+        <span className="text-sm mb-2 block text-center opacity-80 relative z-10">About Page</span>
       </div>
       <div>
         <Hero
@@ -37,7 +41,7 @@ UX Designer"
           }}
         />
       </div>
-        <div>
+      <div>
         <Tabs defaultValue="about" className="w-[80%] mx-auto">
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="about">About</TabsTrigger>
@@ -45,7 +49,7 @@ UX Designer"
             <TabsTrigger value="vision">Our Vision</TabsTrigger>
           </TabsList>
           <TabsContent value="about" className="mt-6">
-            <div className="text-lg w-[90%] mx-auto">
+            <div className="text-lg w-full mx-auto">
               <p>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
@@ -101,11 +105,10 @@ UX Designer"
         <TestimonialSlider />
       </div>
       <div className="bg-transparent text-center text-3xl">
-      Relied on marketers trusted by engineers and
-      Beloved by 
-      <PartnerLogos />
-        </div>
-      
+        Relied on marketers trusted by engineers and
+        Beloved by
+        <PartnerLogos />
+      </div>
     </>
     );
 };
