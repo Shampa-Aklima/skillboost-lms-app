@@ -8,6 +8,7 @@ interface HeroProps {
   subtitle?: string;
   description?: string;
   imageSrc: string;
+  backgroundImageSrc?: string;
   topButton?: {
     text: string;
     onClick?: () => void;
@@ -20,6 +21,7 @@ export default function Hero({
   subtitle,
   description,
   imageSrc,
+  backgroundImageSrc,
   topButton
 }: HeroProps): React.ReactElement {
   const ContentSection = () => (
@@ -62,8 +64,20 @@ export default function Hero({
   );
 
   const ImageSection = () => (
-    <div className="flex justify-center p-7 lg:justify-center">
-      <div className="relative z-0 w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
+    <div className="flex justify-center p-7 lg:justify-center relative">
+      {backgroundImageSrc && (
+        <div className="absolute z-0 w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
+          <Image
+            src={backgroundImageSrc}
+            alt="Background"
+            width={500}
+            height={500}
+            className="object-contain opacity-50"
+            priority
+          />
+        </div>
+      )}
+      <div className="relative z-10 w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
         <Image
           src={imageSrc}
           alt={variant === 'home' ? "Hero Image" : "About Us"}

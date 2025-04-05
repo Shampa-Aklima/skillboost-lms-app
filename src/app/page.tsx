@@ -18,8 +18,9 @@ export default function Home() {
         subtitle="Education Solution"
         description="Discover our comprehensive online learning platform designed to help you achieve your educational goals. Join thousands of students worldwide in their learning journey."
         imageSrc="/hero1.png"
+         backgroundImageSrc="/hero2.png"
       />
-      <PartnerLogos />
+      <PartnerLogos limit={5} />
       <Welcome />
       <Features />
       <Courses />
