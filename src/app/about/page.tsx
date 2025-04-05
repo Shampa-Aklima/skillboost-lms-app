@@ -10,7 +10,7 @@ import {
 } from "../components/ui/tabs";
 
 const page = () => {
-  return (
+    return (
     <>
       <div className="w-full h-[412px] bg-gray-200 flex flex-col justify-center items-center text-3xl">
         About
@@ -37,8 +37,8 @@ UX Designer"
           }}
         />
       </div>
-      <div>
-        <Tabs defaultValue="about" className="w-full">
+        <div>
+        <Tabs defaultValue="about" className="w-[80%] mx-auto">
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="about">About</TabsTrigger>
             <TabsTrigger value="mission">Our Mission</TabsTrigger>
@@ -100,14 +100,14 @@ UX Designer"
         <h2 className="text-3xl font-bold text-center mb-8">What Our Students Say</h2>
         <TestimonialSlider />
       </div>
-      <div className="bg-transparent ">
+      <div className="bg-transparent text-center text-3xl">
       Relied on marketers trusted by engineers and
       Beloved by 
       <PartnerLogos />
-      </div>
+        </div>
       
     </>
-  );
+    );
 };
 
 export default page;
