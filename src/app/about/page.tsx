@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Courses from "../components/Courses";
+
 import Hero from "../components/Hero";
 import PartnerLogos from "../components/PartnerLogos";
 import TestimonialSlider from "../components/TestimonialSlider";
@@ -8,7 +8,7 @@ import {
   TabsList,
   TabsTrigger,
   TabsContent,
-} from "@/app/components/ui/tabs";
+} from "../components/ui/tabs";
 
 const page = () => {
     return (
@@ -99,7 +99,7 @@ UX Designer"
           </TabsContent>
         </Tabs>
       </div>
-      <Courses />
+     
       <div className="py-16 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-8">What Our Students Say</h2>
         <TestimonialSlider />

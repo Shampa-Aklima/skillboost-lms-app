@@ -1,7 +1,6 @@
 import PartnerLogos from "../components/PartnerLogos";
 import { Input } from "../components/ui/input";
 import Image from "next/image";
-import Courses from "../components/Courses";
 import Contact from "../components/Contact";
 import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
@@ -60,8 +59,7 @@ const page = () => {
           <PartnerLogos />
         </div>
       </div>
-
-      <Courses variant="simple" />
+    
       <Contact/>
       <Pricing/>
       <Testimonials/>

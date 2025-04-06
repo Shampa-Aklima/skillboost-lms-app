@@ -32,21 +32,23 @@ export default function Header(): React.ReactElement {
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
               Home
-              <ul>
-                <li>
-                  <Link href="/home1">Home1</Link>
-                </li>
-                
-              </ul>
+              
             </Link>
             <Link
-              href="#courses"
+              href="/home1"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
+              Home1
+              
+            </Link>
+            <Link
+              href="/featureCourse"
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
               Courses
             </Link>
             <Link
-              href="#pricing"
+              href="/pricing"
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
               Pricing
@@ -55,7 +57,7 @@ export default function Header(): React.ReactElement {
             
             </Link>
             <Link
-              href="#contact"
+              href="/contact"
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
               Contact
@@ -100,28 +102,28 @@ export default function Header(): React.ReactElement {
                 Home
               </Link>
               <Link
-                href="#courses"
+                href="/courses"
                 className="text-base font-medium text-gray-700 hover:text-purple-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Courses
               </Link>
               <Link
-                href="#pricing"
+                href="/pricing"
                 className="text-base font-medium text-gray-700 hover:text-purple-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Pricing
               </Link>
               <Link
-                href="#about"
+                href="/about"
                 className="text-base font-medium text-gray-700 hover:text-purple-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-base font-medium text-gray-700 hover:text-purple-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >

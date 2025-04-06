@@ -1,6 +1,4 @@
 import Contact from "./components/Contact";
-import Courses from "./components/Courses";
-import Features from "./components/Features";
 import Hero from "./components/Hero";
 import PartnerLogos from "./components/PartnerLogos";
 import Pricing from "./components/Pricing";
@@ -22,8 +20,6 @@ export default function Home() {
       />
       <PartnerLogos limit={5} />
       <Welcome />
-      <Features />
-      <Courses />
       <Contact />
       <Pricing />
       <Testimonials />
@@ -31,3 +27,4 @@ export default function Home() {
     </div>
   );
 }
+
