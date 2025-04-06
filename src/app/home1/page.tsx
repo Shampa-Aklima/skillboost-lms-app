@@ -6,6 +6,7 @@ import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import BlogSection from "../components/BlogSection";
 import { blogPosts } from "../types/blogData";
+import CourseList from "../components/CourseList";
 
 const page = () => {
   return (
@@ -59,7 +60,7 @@ const page = () => {
           <PartnerLogos />
         </div>
       </div>
-    
+      <CourseList variant="about" />
       <Contact/>
       <Pricing/>
       <Testimonials/>

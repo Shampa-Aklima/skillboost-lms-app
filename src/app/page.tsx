@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Welcome from "./components/Welcome";
 import BlogSection from "./components/BlogSection";
 import { blogPosts } from "./types/blogData";
+import CourseList from "./components/CourseList";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       />
       <PartnerLogos limit={5} />
       <Welcome />
+      <CourseList variant="home" />
       <Contact />
       <Pricing />
       <Testimonials />

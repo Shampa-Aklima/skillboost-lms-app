@@ -9,15 +9,17 @@ import {
   TabsTrigger,
   TabsContent,
 } from "../components/ui/tabs";
-
+import CourseList from "../components/CourseList";
 const page = () => {
-    return (
+  return (
     <>
       <div className="w-full h-[412px] flex flex-col justify-center items-center text-3xl bg-[#F8F6FF] bg-cover bg-center text-black font-semibold relative">
         <div className="absolute inset-0 opacity-10">
           <Image src="/hero3.png" alt="pattern" fill className="object-cover" />
         </div>
-        <span className="text-sm mb-2 block text-center opacity-80 relative z-10">About Page</span>
+        <span className="text-sm mb-2 block text-center opacity-80 relative z-10">
+          About Page
+        </span>
       </div>
       <div>
         <Hero
@@ -55,13 +57,14 @@ UX Designer"
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words look even slightly
                 believable. If you are going to use a passage of Lorem Ipsum,
-                you need to be sure there isn&apos;t anything embarrassing hidden in
-                the middle of text. Ipsum generators on the Internet tend to
-                repeat predefined chunks as necessary, making this the first
-                true generator on the Internet. It uses a dictionary of over 200
-                combined with a handful of model sentence structures, to
-                generate Lorem Ipsum which looks reasonable. The generated Lorem
-                Ipsum is therefore always free from characteristic words etc.
+                you need to be sure there isn&apos;t anything embarrassing
+                hidden in the middle of text. Ipsum generators on the Internet
+                tend to repeat predefined chunks as necessary, making this the
+                first true generator on the Internet. It uses a dictionary of
+                over 200 combined with a handful of model sentence structures,
+                to generate Lorem Ipsum which looks reasonable. The generated
+                Lorem Ipsum is therefore always free from characteristic words
+                etc.
               </p>
 
               <p className="mt-4">
@@ -99,18 +102,19 @@ UX Designer"
           </TabsContent>
         </Tabs>
       </div>
-     
+      <CourseList variant="about" />
       <div className="py-16 bg-gray-50">
-        <h2 className="text-3xl font-bold text-center mb-8">What Our Students Say</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">
+          What Our Students Say
+        </h2>
         <TestimonialSlider />
       </div>
       <div className="bg-transparent text-center text-3xl">
-        Relied on marketers trusted by engineers and
-        Beloved by
+        Relied on marketers trusted by engineers and Beloved by
         <PartnerLogos />
       </div>
     </>
-    );
+  );
 };
 
 export default page;
