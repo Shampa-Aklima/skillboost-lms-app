@@ -48,10 +48,16 @@ export default function Header(): React.ReactElement {
               Courses
             </Link>
             <Link
-              href="/pricing"
+              href="/singleCoursePage"
               className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
             >
-              Pricing
+              Single Page
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm font-medium text-gray-700 hover:text-purple-700 transition-colors"
+            >
+             Blog
             </Link>
             <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-purple-700">About
             
